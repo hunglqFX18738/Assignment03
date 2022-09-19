@@ -1,0 +1,345 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 0;
+}
+
+.section-title {
+  font-size: 36px;
+}
+
+/* HEADER */
+/* Ảnh nền mờ ẩn của header */
+.banner-image {
+  height: 500px;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+/* Căn chỉnh chữ cho header */
+#banner {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* NAVBAR */
+/* Căn giữa và tạo viền dưới cho Nav */
+#nav-bar {
+  text-align: center;
+  border-bottom: rgba(0, 0, 0, 0.182) solid 2px;
+}
+
+/* Căn chỉnh cách link a cho Nav */
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 20px 20px;
+}
+
+/* Điều chỉnh icon trong Nav */
+nav i {
+  padding: 0 5px;
+  color: #1c7ed6;
+}
+
+/* Tạo ảnh avatar giữa thanh Nav */
+.avatar {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 150px;
+  position: absolute;
+  left: -135%;
+  top: -100%;
+  border: #fff solid 10px;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* THÔNG TIN CÁ NHÂN */
+/* Căn chỉnh và chia 2 khối */
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.8;
+  width: 100%;
+  padding: 0;
+}
+
+#target {
+  padding: 80px 40px 0 0;
+}
+
+#personal-info {
+  padding: 80px 0 40px 40px;
+  background-color: rgba(128, 128, 128, 0.071);
+}
+
+/* Căn chỉnh cho tiêu đề của 2 khối */
+#target h1,
+#personal-info h1 {
+  margin-bottom: 25px;
+}
+
+/* Điều chỉnh list thông tin cá nhân */
+.info {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+/* In đậm các dòng chữ bên trái của khối 2*/
+.info span {
+  font-weight: bold;
+}
+
+/* Đổi màu icon */
+#personal-info i {
+  color: #1c7ed6;
+}
+
+/* THÔNG TIN NGHỀ NGHIỆP */
+/* Căn chỉnh và chia thành 6 khối */
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+
+/* Tạo viền cho các khối */
+.job-info-card {
+  border-top: rgba(0, 0, 0, 0.1) solid 1px;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+  padding-top: 60px;
+}
+
+/* Căn chỉnh cho tiêu đề, icon của các khối */
+.job-info-title {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 24px;
+}
+
+.job-info-title i {
+  text-align: center;
+  font-size: 44px;
+}
+
+/* Điều chỉnh cho nội dung bên trong từng khối */
+.job-info-container {
+  margin-bottom: 40px;
+}
+
+.inner {
+  position: relative;
+  padding-left: 25px;
+  margin-top: 60px;
+}
+
+/* Tạo chấm xanh trong khối */
+.inner h3:before {
+  content: "• ";
+  color: #1c7ed6;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: -7%;
+}
+
+/* Điều chỉnh dòng số thời gian */
+.inner i {
+  font-size: 14px;
+}
+
+/* Tạo button về thời gian */
+.btn-job-time {
+  border-radius: 5px;
+  background-color: #1c7ed6;
+  color: #fff;
+  padding: 0 5px;
+}
+
+/* Tạo các thanh kĩ năng */
+.skill-bar {
+  background: #1c7ed6;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+/* Căn chỉnh cho khối Sở thích */
+.lobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 15px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.lobby-icons {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: #1c7ed6 groove 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1c7ed6;
+  font-size: 24px;
+}
+
+/* CHỨNG CHỈ GIẢI THƯỞNG */
+/* Căn chỉnh và chia thành 3 khối */
+.container .cert-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cert-cols {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: #d6c08d solid;
+}
+
+/* Điều chỉnh chiều rộng hình ảnh trong khối */
+.cert-cols img {
+  width: 40%;
+}
+
+.cert-cols p {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/*Thiết lập dòng đầu tiên được in đậm và viết hoa */
+.cert-cols p:first-child {
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.cert-img {
+  padding-left: 20px;
+  border-left: #d6c08d solid;
+}
+
+/* DỰ ÁN */
+/* Căn chỉnh và chia thành 3 khối */
+.container .project-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* Điều chỉnh cho hình ảnh từng khối */
+.project-cols img {
+  width: 100%;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+/* Căn chỉnh tiêu đề cho khối */
+.project-title {
+  padding: 15px;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+  text-transform: uppercase;
+}
+
+/* Căn chỉnh phần giới thiệu cho khối */
+.project-intro {
+  padding: 15px;
+}
+
+.project-intro i {
+  font-style: normal;
+  margin-left: 15px;
+}
+
+.btn-project {
+  border-radius: 15px;
+  background-color: #1c7ed6;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+}
+
+/* Căn chỉnh nội dung */
+.project-details {
+  border-collapse: collapse;
+}
+
+.project-details tr {
+  border-top: rgba(0, 0, 0, 0.2) solid 1px;
+}
+
+.project-details td {
+  min-width: 100px;
+  vertical-align: top;
+  padding: 10px 5px;
+}
+
+/* LIÊN HỆ */
+#footer {
+  margin-top: 40px;
+}
+
+#footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#footer li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+#footer i {
+  color: #1c7ed6;
+  font-size: 30px;
+  margin-right: 3px;
+  vertical-align: middle;
+}

@@ -1,0 +1,79 @@
+@media screen and (max-width: 600px) {
+  /* Điều chỉnh các items của nav dàn theo chiều dọc và nằm hết bên trái */
+  #nav-bar {
+    text-align: start;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  /* Ẩn ảnh đại diện */
+  .avatar {
+    display: none;
+  }
+
+  /* Chia THÔNG TIN CÁ NHÂN thành 2 hàng */
+  #about .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Điều chỉnh THÔNG TIN NGHỀ NGHIỆP về 1 cột */
+  #job-info .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Điều chỉnh CHỨNG CHỈ GIẢI THƯỞNG về 1 cột */
+  .container .cert-inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cho các phần tử xếp dọc */
+  .cert-cols {
+    flex-wrap: wrap;
+  }
+
+  /* Điều chỉnh kích thước hình ảnh */
+  .cert-cols img {
+    width: 90%;
+    height: 75%;
+    margin-bottom: 20px;
+  }
+
+  /* Bỏ viền bên trái hình ảnh cột 2 */
+  .cert-img {
+    border: none;
+  }
+
+  /* DỰ ÁN */
+  .container .project-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title {
+    border-left: rgba(0, 0, 0, 0.1) solid 1px;
+    border-right: rgba(0, 0, 0, 0.1) solid 1px;
+  }
+
+  .project-intro {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-left: rgba(0, 0, 0, 0.1) solid 1px;
+    border-right: rgba(0, 0, 0, 0.1) solid 1px;
+  }
+
+  .project-intro i {
+    font-style: normal;
+    margin-left: 0;
+  }
+
+  .btn-project {
+    width: 100px;
+  }
+
+  .project-details tr {
+    border: rgba(0, 0, 0, 0.1) solid 1px;
+    border-top: rgba(0, 0, 0, 0.2) solid 1px;
+  }
+}
